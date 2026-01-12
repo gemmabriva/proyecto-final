@@ -1,0 +1,203 @@
+:root{
+    scroll-behavior: smooth;
+    font-size:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+    cursor: inherit;
+}
+p a{
+    display: inline;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+    
+}
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+body{
+    background-color: #1a202c;
+    font-family: "Merriweather" , serif;
+    --body-color: snow;
+    --button-color: #c8ffb8;
+    --button-color-text: black;
+    --h4-font: italic 600 clamp(.9rem, 7vw, 1.8rem) "Merriweather";
+    --stroke-color: #D1D1D1;
+    --second-background-color: #2D3748;
+
+    
+}
+.Header{
+    width: 100%;
+    min-height: 20vh;
+    /* background-color: firebrick; */
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+}
+.Header-top{
+    width: 100%;
+    min-height: 10vh;
+    /* background-color: red; */
+
+    padding: 0 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header-nav{
+    width: 100%;
+    min-height: 10vh;
+    /* background-color: blue; */
+
+    padding: 0 4rem;
+
+    display: none;
+    justify-items: start;
+    
+    position: fixed;
+    top: 5.625rem;
+    left: 0;
+    
+    transform: translateY(-100%);
+    opacity: 0;
+}
+.Header-nav.isActive{
+    transform: translateY(0);
+    opacity: 1;
+}
+.Header-ham{
+
+    display: none;
+
+    position: relative;
+    z-index: 1;
+}
+.Header-menu{
+    width: 80%;
+    max-width: 81.25rem;
+    min-height: 5vh;
+    /* background-color: lightgoldenrodyellow; */
+
+    padding: 1rem;
+
+    justify-items: start;
+}
+.Header-search{
+    width: 30%;
+    min-height: 6vh;
+    /* background-color: lightpink; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header-form{
+    width: 90%;
+    max-width: 62.5rem;
+    min-height: 5vh;
+    background-color: var(--second-background-color);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 1.25rem;
+}
+.Header-button{
+    width: 100%;
+    min-height: 1.25rem;
+    background-color: var(--second-background-color);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.0625rem 2rem;
+    margin: auto;
+    
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 .5rem;
+
+    letter-spacing: .0938rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+
+    transition: all 0.5s ease;
+}
+@media (max-width: 75rem) {
+    .Header-form{
+        width: 95%;
+    }
+}
+@media (max-width: 62.5rem) {
+    .Header-menu{
+        display: none;
+    }
+    .Header-ham{
+        display: block;
+    }
+    .Header-nav{
+        display: block;
+    }
+    .Header-search{
+        width: 35%;
+    }
+}
+.Header-button:hover {
+    letter-spacing: .125rem;
+    background-color: var(--button-color);
+    color: var(--button-color-text);
+    box-shadow: var(--button-color) 0rem .4375rem 1.8125rem 0rem;
+}
+.Header-button:active {
+    letter-spacing: .125rem;
+    background-color: var(--button-color);
+    color: var(--button-color-text);
+    box-shadow: var(--button-color) 0rem 0rem 0rem 0rem;
+    transform: translateY(.625rem);
+    transition: 100ms;
+}

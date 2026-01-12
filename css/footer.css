@@ -1,0 +1,153 @@
+:root{
+    scroll-behavior: smooth;
+    font-size:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+    cursor: inherit;
+}
+p a{
+    display: inline;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+    
+}
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+body{
+    background-color: #1a202c;
+    font-family: "Merriweather" , serif;
+    --body-color: snow;
+    --button-color: #c8ffb8;
+    --button-color-text: black;
+    --h4-font: italic 600 clamp(.9rem, 7vw, 1.8rem) "Merriweather";
+    --stroke-color: #D1D1D1;
+    --second-background-color: #2D3748;
+}
+
+.Footer{
+    width: 100%;
+    min-height: 30vh;
+    /* background-color: darkgrey; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .0313rem;
+
+    border-top: solid .0625rem var(--stroke-color);
+}
+.Footer-column{
+    width: 50%;
+    min-height: 30vh;
+    /* background-color: red; */
+
+    padding: 4rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.Footer-h1{
+    padding: 0 0 0 4rem;
+
+    color: #c8ffb8;
+
+    font: normal clamp(5rem, 10vh, 10rem) "Bebas Neue";
+
+    text-transform: uppercase;
+    text-decoration: underline double .5rem;
+
+    text-shadow: 0 0 80px rgba(200, 255, 184, 0.4), 0 0 40px rgba(200, 255, 184, 0.2), 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+.Footer-ul{
+    padding: 0 0 0 7.3rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.Footer-newsletter{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.Footer-span{
+    width: 100%;
+    /* background-color: lightblue; */
+
+    color: var(--body-color);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font: italic 400 clamp(1rem, 2vh, 2rem) "Montserrat";
+}
+.Footer-p{
+    width: 85%;
+    /* background-color: lightcoral; */
+
+    color: var(--body-color);
+    font: italic 100 clamp(1rem, 1vh, 1rem) "Montserrat";
+}
+.Footer-form{
+    width: 50%;
+    min-height: 3rem;
+    background-color: var(--second-background-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4rem;
+    border: solid .0625rem var(--stroke-color);
+}
+.Footer-input{
+    width: 80%;
+
+    text-align: center;
+    font: normal 100 1rem "Montserrat";
+}

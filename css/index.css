@@ -1,0 +1,164 @@
+:root{
+    scroll-behavior: smooth;
+    font-size:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    cursor: inherit;
+}
+p a{
+    display: contents;
+    pointer-events: none;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;   
+}
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+body{
+    background-color: #1a202c;
+    cursor: none;
+    font-family: "Bebas Neue", sans-serif;   
+}
+a svg path {
+    position: auto;
+    cursor: none;
+}
+.Mouse{
+    width: 1.5rem;
+    height: 1.5rem;
+    /* background-color: red; */
+
+    position: fixed;
+    top: -.75rem;
+    left: -.75rem;
+
+    z-index: 2; 
+    
+    pointer-events: none;
+}
+.Mouse-plane{
+    fill: black;
+    stop-color: #d1d1d1;
+}
+
+.Header{
+    width: 100%;
+    min-height: 15vh;
+    /* background-color: #2D3748; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: double .5rem #c8ffb8;
+}
+.Header-h1{
+
+    color: #c8ffb8;
+
+    font-weight: 400;
+    font-size: clamp(6rem, 10vh, 12rem);
+    text-transform: uppercase;
+
+    text-shadow: 0 0 80px rgba(200, 255, 184, 0.4), 0 0 40px rgba(200, 255, 184, 0.2), 0 4px 30px rgba(0, 0, 0, 0.5);
+
+    animation: slideUp 2s ease 1 both;
+
+}
+.Main{
+    width: 100%;
+    min-height: 85vh;
+}
+.Main-world{
+    width: 100%;
+    max-width: 93.75rem;
+    min-height: 85vh;
+
+    margin: auto;
+}
+.Main-continent{
+    position: absolute;
+    background-color: red;
+}
+.Main-continent:hover path{
+    fill: #c8ffb8;
+    transition: all 0.3s ease-in-out;
+}
+.Main-continent--america-norte{
+    width: 31.25rem;
+    top: 3.125rem;
+    left: 1.25rem;
+}
+.Main-continent--america-sur{
+    width: 17.5rem;
+    top: 18.7188rem;
+    left: 14.1563rem;
+}
+.Main-continent--europa{
+    width: 16.5625rem;
+    top: 9.375rem;
+    left: 37.8125rem;
+}
+.Main-continent--africa{
+    width: 23rem;
+    top: 20rem;
+    left: 35.3125rem;
+}
+.Main-continent--asia{
+    width: 37.5rem;
+    top: 6.875rem;
+    left: 47.0625rem;
+}
+.Main-continent--oceania{
+    width: 16.875rem;
+    top: 31.25rem;
+    left: 76.875rem;
+}
+
+
+@keyframes slideUp{
+    from{
+        transform: translateY(0%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(10%);
+        opacity: 1;
+    }
+}
+
