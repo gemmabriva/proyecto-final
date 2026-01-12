@@ -75,7 +75,7 @@ body{
     border-top: solid .0625rem var(--stroke-color);
 }
 .Footer-column{
-    width: 50%;
+    width: 100%;
     min-height: 30vh;
     /* background-color: red; */
 
@@ -88,7 +88,6 @@ body{
     gap: 2rem;
 }
 .Footer-h1{
-    padding: 0 0 0 4rem;
 
     color: #c8ffb8;
 
@@ -100,7 +99,8 @@ body{
     text-shadow: 0 0 80px rgba(200, 255, 184, 0.4), 0 0 40px rgba(200, 255, 184, 0.2), 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 .Footer-ul{
-    padding: 0 0 0 7.3rem;
+    width: 30%;
+    /* background-color: red; */
 
     display: flex;
     flex-flow: row nowrap;
@@ -150,4 +150,33 @@ body{
 
     text-align: center;
     font: normal 100 1rem "Montserrat";
+}
+
+@media (max-width: 768px){
+    .Footer{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+    }
+    .Footer-column{
+        width: 100%;
+
+        text-align: center;
+    }
+    .Footer-form{
+        width: 80%;
+    }
+    .Footer-newsletter{
+        gap: 2rem;
+    }
+    .Footer-h1{
+        width: 100%;
+    }
+    .Footer-ul{
+        width: 100%;
+        /* background-color: red; */
+
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -70,14 +70,14 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
-    align-items: start;
+    align-items: center;
 }
 .Header-top{
     width: 100%;
     min-height: 10vh;
     /* background-color: red; */
 
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 
     display: flex;
     flex-flow: row nowrap;
@@ -85,23 +85,24 @@ body{
     align-items: center;
 }
 .Header-nav{
-    width: 100%;
+    max-width: 100%;
     min-height: 10vh;
     /* background-color: blue; */
 
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
 
     display: none;
-    justify-items: start;
-    
-    position: fixed;
-    top: 5.625rem;
+    justify-items: center;
+
+    position: sticky;
+    top: 0;
     left: 0;
     
     transform: translateY(-100%);
     opacity: 0;
 }
 .Header-nav.isActive{
+
     transform: translateY(0);
     opacity: 1;
 }

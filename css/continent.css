@@ -351,13 +351,15 @@ body{
 .Main-lightbox{
     width: 100%;
     max-width: 150rem;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--second-background-color);
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
+    padding: 2rem 0;
 
     position: fixed;
     top: 0;
@@ -369,8 +371,13 @@ body{
     pointer-events: none;
 }
 .Main-lightbox.isActive{
+    align-items: flex-start;
+
     opacity: 1;
     pointer-events: auto;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .bi-x-square{
     position: fixed;
@@ -383,7 +390,7 @@ body{
 }
 .Lightbox{
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     /* background-color: beige; */
 }
 .Lightbox-header{
@@ -484,7 +491,7 @@ body{
 
 }
 .Lightbox-li.isActive{
-    letter-spacing: .125rem;
+    
     background-color: var(--button-color);
     color: var(--button-color-text);
     box-shadow: var(--button-color) 0rem 0rem 0rem 0rem;
@@ -570,4 +577,62 @@ body{
 .Column-image{
     width: 50%;
     height: 30vh;
+}
+
+@media ( max-width: 1167px ){
+    .Lightbox-header{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .Lightbox-title{
+        width: 100%;
+        min-height: auto;
+        /* background-color: green; */
+
+        padding: 0 2rem;
+    }
+    .Lightbox-h2{
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        text-align: center;
+    }
+    .Lightbox-h3{
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        text-align: center;
+    }
+    .Lightbox-img{
+        width: 80%;
+        height: 30vh;
+    }
+    .Lightbox-p{
+        padding: 1rem 2rem;
+    }
+    .Lightbox-ul{
+        width: 90%;
+
+        border-radius: .5rem;
+    }
+    .Lightbox-li{
+        width: calc(90% / 10);
+    }
+    .Lightbox-text{
+
+        padding: 2rem 0 ;
+    }
+    .Lightbox-column{
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .Column-ul{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .Column-image{
+        width: 80%;
+        height: auto;
+    }
 }

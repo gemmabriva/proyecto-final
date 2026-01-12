@@ -1,5 +1,7 @@
 `use strict`
 
+
+
 const header = document.querySelector(`.Header`)
 const headerHam = header.querySelector(`.Header-ham`)
 const headerBox = header.querySelector(`.Header-nav`)
@@ -67,7 +69,7 @@ const lightbox = document.querySelectorAll(`.Main-lightbox`)
 const button = document.querySelectorAll(`.Main-bttn`)
 const closeBtn = document.querySelectorAll(`.Lightbox-button`)
 
-// ...existing code...
+
 const windowKeyUp = (e) => {
     if (e.key === 'Escape') {
         const activeLightboxes = document.querySelectorAll('.Main-lightbox.isActive')
