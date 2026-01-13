@@ -161,4 +161,11 @@ a svg path {
         opacity: 1;
     }
 }
-
+@media (max-width: 820px){
+    .Mouse{
+        display: none;
+    }
+    body{
+        cursor: default;
+    }
+}

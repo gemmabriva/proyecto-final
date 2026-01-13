@@ -140,3 +140,9 @@ body{
     font: var(--h3-font);
     color: var(--stroke-color);
 }
+
+@media (max-width: 820px){
+    .Main-destino:hover{
+        display: none;
+    }
+}

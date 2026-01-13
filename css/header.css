@@ -169,25 +169,6 @@ body{
 
     transition: all 0.5s ease;
 }
-@media (max-width: 75rem) {
-    .Header-form{
-        width: 95%;
-    }
-}
-@media (max-width: 62.5rem) {
-    .Header-menu{
-        display: none;
-    }
-    .Header-ham{
-        display: block;
-    }
-    .Header-nav{
-        display: block;
-    }
-    .Header-search{
-        width: 35%;
-    }
-}
 .Header-button:hover {
     letter-spacing: .125rem;
     background-color: var(--button-color);
@@ -201,4 +182,34 @@ body{
     box-shadow: var(--button-color) 0rem 0rem 0rem 0rem;
     transform: translateY(.625rem);
     transition: 100ms;
+}
+
+@media (max-width: 75rem) {
+    .Header-form{
+        width: 95%;
+    }
+}
+@media (max-width: 62.5rem) {
+    .Header-menu{
+        display: none;
+    }
+    .Header-ham{
+        display: block;
+
+        padding: 0 1rem;
+    }
+    .Header-nav{
+        display: block;
+    }
+    .Header-search{
+        width: 50%;
+
+        padding: 0 1rem;
+    }
+    .Header-input{
+        width: 50%;
+    }
+    .bi-search{
+        display: none;
+    }
 }

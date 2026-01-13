@@ -153,3 +153,12 @@ lightboxParrafo.forEach(( _ , index)=>{
         lightboxParrafo[index].classList.toggle(`isActive`)
     })
 })
+
+
+
+
+
+
+document.querySelectorAll('.Lightbox-button').length
+
+console.log(button)
