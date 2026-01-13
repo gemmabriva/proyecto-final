@@ -83,11 +83,12 @@ body{
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
 .Footer-h1{
+    /* background-color: blue; */
 
     color: #c8ffb8;
 
@@ -99,7 +100,6 @@ body{
     text-shadow: 0 0 80px rgba(200, 255, 184, 0.4), 0 0 40px rgba(200, 255, 184, 0.2), 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 .Footer-ul{
-    width: 30%;
     /* background-color: red; */
 
     display: flex;
@@ -152,7 +152,7 @@ body{
     font: normal 100 1rem "Montserrat";
 }
 
-@media (max-width: 768px){
+@media (max-width: 820px){
     .Footer{
         display: flex;
         flex-flow: column-reverse nowrap;
@@ -174,9 +174,5 @@ body{
     .Footer-ul{
         width: 100%;
         /* background-color: red; */
-
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
     }
 }

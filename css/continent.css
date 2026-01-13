@@ -117,7 +117,7 @@ body{
     }
     .Section-content{
         width: 90%;
-        padding: 2rem;
+        padding: 1.5rem;
     }
     .Section{
         align-content: center;
@@ -348,6 +348,16 @@ body{
 }
 
 @media (max-width: 820px){
+    .Main-h2{
+        font-size: clamp(2.5rem, 6vw, 3rem);
+    }
+    .Main-h3{
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+    .Main-p{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
     .Main-li{
         display: flex;
         flex-flow: column-reverse nowrap;
@@ -619,7 +629,6 @@ body{
     }
     .Lightbox-img{
         width: 80%;
-        height: 20vh;
     }
     .Lightbox-p{
         display: none;
