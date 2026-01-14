@@ -22,6 +22,18 @@ const carrouselUl = carrousel.querySelector(`.Main-ul`)
 
 let contador = 0
 
+if (window.location.href.includes(`#eeuu`)){
+    contador = 0
+}
+if(window.location.href.includes(`#canada`)){
+    contador = 1
+}
+if(window.location.href.includes(`#nymx`)){
+    contador = 2
+}
+
+console.log (contador)
+
 const moverWrapper = ()=>{
     carrouselUl.style.translate = `-${ (100 / carrouselLi.length) * contador}%`
 }
@@ -154,11 +166,3 @@ lightboxParrafo.forEach(( _ , index)=>{
     })
 })
 
-
-
-
-
-
-document.querySelectorAll('.Lightbox-button').length
-
-console.log(button)
