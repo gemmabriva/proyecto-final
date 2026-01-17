@@ -11,15 +11,12 @@
     <script src="js/continent.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header class="Header">
         <div class="Header-top">
             <div class="Header-ham">
@@ -50,6 +47,8 @@
             <a href="index.html" class="Header-button">Volver al mapa</a>
         </div>
     </header>
+
+    <!-- SECTION DE AFRICA -->
     <div class="Section Section-africa">
         <div class="Section-content">
             <h1 class="Section-h1">África</h1>
@@ -57,6 +56,8 @@
                 que se siente, se escucha y se vive intensamente, desde el desierto hasta la sabana y el océano.</p>
         </div>
     </div>
+
+    <!-- MAIN DE AFRICA -->
     <main class="Main">
         <div class="Main-carrousel">
             <div class="Main-arrow Main-arrow--prev">
@@ -66,8 +67,10 @@
                         d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
                 </svg>
             </div>
+
+            <!-- CADA .MAIN-LI TIENE UN ID QUE VA CONECTADO CON EL ANCHOR DE LA PAGINA DESTINOS.HTML-->
             <ul class="Main-ul">
-                <li class="Main-li">
+                <li class="Main-li" id="marruecos">
                     <div class="Main images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/alto-atlas.webp"
@@ -99,13 +102,13 @@
                                     &nbsp; | &nbsp; Destinos: &nbsp; Marrakech &nbsp; - &nbsp; Fez - &nbsp;
                                     Sahara</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="Main-li">
+                <li class="Main-li" id="kenia">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/atardecer-kenia.webp"
@@ -135,13 +138,13 @@
                                 <span class="Resume-span">Duración: &nbsp; 12 Días &nbsp; | &nbsp; Modo: &nbsp; Roadtrip
                                     &nbsp; | &nbsp; Destinos: &nbsp; Nairobi &nbsp; - &nbsp; Masái Mara</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="Main-li">
+                <li class="Main-li" id="zanzibar">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/buceo-snorkel.webp"
@@ -174,12 +177,13 @@
                                     Avión &nbsp; | &nbsp; Destinos: &nbsp; Stone Town &nbsp; - &nbsp; Costa Este -
                                     &nbsp; Zanzíbar</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
+                <!-- EN ESTE .MAIN-LI NOS ENCONTRAMOS EL BOTON QUE VA A LA PÁGINA DE TODOS LOS DESTINOS CREADOS -->
                 <li class="Main-li Main-li--destinos">
                     <a href="destinos.html" class="Header-button">Descubre más destinos &nbsp; ➜ </a>
                 </li>
@@ -191,7 +195,11 @@
                         d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
                 </svg>
             </div>
-            <div class="Main-lightbox Lightbox" id="marruecos">
+
+            <!--LIGHTBOX-CARROUSEL: Detalle del viaje con itinerario diario-->
+
+            <!-- LIGHTBOX DE MARRUECOS -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -444,7 +452,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Main-lightbox Lightbox" id="kenia">
+
+            <!-- LIGHTBOX DE KENIA -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -514,8 +524,8 @@
                                             lanzarte a la sabana.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-nairobi.webp" alt="Nairobi"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/ee397c58-e9ca-4f78-9c3d-3a7e085346d3.jpg"
+                                        alt="Nairobi" loading="lazy">
                                 </div>
                             </div>
 
@@ -537,11 +547,11 @@
                                         <p class="Column-p">
                                             Hoy entras en modo safari. Amboseli es uno de los parques estrella del
                                             itinerario y la emoción suele empezar
-                                            ya en el camino. :contentReference[oaicite:1]{index=1}
+                                            ya en el camino. 
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-amboseli.webp" alt="Amboseli"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/3692d8ac-86a0-4691-8aac-7179851a40d1.jpg"
+                                        alt="Amboseli" loading="lazy">
                                 </div>
                             </div>
 
@@ -561,10 +571,10 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Día completo para explorar Amboseli, uno de los puntos fuertes del viaje por
-                                            su fauna y paisajes. :contentReference[oaicite:2]{index=2}
+                                            su fauna y paisajes.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-safari-amboseli.webp"
+                                    <img class="Column-image" src="./assets/630a786a-42f5-4671-8484-53411a2d76eb.jpg"
                                         alt="Safari en Amboseli" loading="lazy">
                                 </div>
                             </div>
@@ -585,11 +595,11 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Tras la sabana, el lago aporta calma: agua, aves y un Kenia diferente,
-                                            dentro de la ruta marcada por Evaneos. :contentReference[oaicite:3]{index=3}
+                                            dentro de la ruta marcada por Evaneos. 
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-naivasha.webp" alt="Lake Naivasha"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/15c676bb-2e4d-40b4-a11b-e4b6d3112479.jpg"
+                                        alt="Lake Naivasha" loading="lazy">
                                 </div>
                             </div>
 
@@ -611,11 +621,10 @@
                                         <p class="Column-p">
                                             Aberdare cambia totalmente el decorado: bosques, agua y un ambiente más
                                             fresco, tal como destaca el itinerario.
-                                            :contentReference[oaicite:4]{index=4}
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-aberdare.webp" alt="Aberdare"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/11f2e7a3-b8d4-498a-8b34-7d677fc10411.jpg"
+                                        alt="Aberdare" loading="lazy">
                                 </div>
                             </div>
 
@@ -635,11 +644,11 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Entras en la zona de Samburu, famosa por su carácter distinto y su vida
-                                            salvaje particular. :contentReference[oaicite:5]{index=5}
+                                            salvaje particular.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-samburu.webp" alt="Samburu"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/1ba2bbd1-289e-4c1d-8fc4-08ae00ef9020.jpg"
+                                        alt="Samburu" loading="lazy">
                                 </div>
                             </div>
 
@@ -660,10 +669,10 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Día para exprimir el norte: safaris con paisajes diferentes a los del sur y
-                                            sensación de “Kenia remoto”. :contentReference[oaicite:6]{index=6}
+                                            sensación de “Kenia remoto”.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-buffalo-springs.webp"
+                                    <img class="Column-image" src="./assets/c2ef358c-8bf9-4664-8d05-61a11b27a3fd.jpg"
                                         alt="Buffalo Springs" loading="lazy">
                                 </div>
                             </div>
@@ -684,11 +693,11 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Nakuru es uno de los puntos clave del itinerario por su combinación de
-                                            paisaje lacustre y fauna emblemática. :contentReference[oaicite:7]{index=7}
+                                            paisaje lacustre y fauna emblemática.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-nakuru.webp" alt="Lago Nakuru"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/161a0ff3-ff0b-4214-83bc-3814b3e237ef.jpg"
+                                        alt="Lago Nakuru" loading="lazy">
                                 </div>
                             </div>
 
@@ -708,10 +717,10 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Llegas al gran escenario del safari en Kenia: Masái Mara, donde la vida
-                                            salvaje se siente a cada kilómetro. :contentReference[oaicite:8]{index=8}
+                                            salvaje se siente a cada kilómetro.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-masai-mara.webp" alt="Masái Mara"
+                                    <img class="Column-image" src="./assets/f80d9472-6452-49bb-8b52-d4980dd52630.jpg" alt="Masái Mara"
                                         loading="lazy">
                                 </div>
                             </div>
@@ -733,10 +742,9 @@
                                         <p class="Column-p">
                                             Día de safari puro en una de las reservas más famosas del mundo, con grandes
                                             probabilidades de escenas inolvidables.
-                                            :contentReference[oaicite:9]{index=9}
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-mara-safari.webp"
+                                    <img class="Column-image" src="./assets/e87a76c6-1616-4ac9-b412-8881b0f700eb.jpg"
                                         alt="Safari en Masái Mara" loading="lazy">
                                 </div>
                             </div>
@@ -760,7 +768,7 @@
                                             constantemente y siempre guarda sorpresas.
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-mara-last.webp"
+                                    <img class="Column-image" src="./assets/6a8d85ca-6968-4dcc-b6f3-898f46d9a22b.jpg"
                                         alt="Último día en Masái Mara" loading="lazy">
                                 </div>
                             </div>
@@ -783,20 +791,20 @@
                                             Cierre del viaje con regreso a Nairobi, con la sensación de haber recorrido
                                             varios “Kenia” distintos:
                                             sabana, bosques, lagos y reservas legendarias.
-                                            :contentReference[oaicite:10]{index=10}
                                         </p>
                                     </div>
-                                    <img class="Column-image" src="./assets/kenia-regreso.webp" alt="Regreso a Nairobi"
-                                        loading="lazy">
+                                    <img class="Column-image" src="./assets/e77ad020-8e16-420c-aa7a-da6ac45142c1.jpg"
+                                        alt="Regreso a Nairobi" loading="lazy">
                                 </div>
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
-            <div class="Main-lightbox Lightbox" id="Lightbox-patagonia">
+
+            <!-- LIGHTBOX DE ZANZÍBAR -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -808,10 +816,20 @@
                         </svg>
                     </div>
                     <header class="Lightbox-header">
-                        <div class="Lightbox-title"></div>
-                        <h2 class="Lightbox-h2"></h2>
-                        <h3 class="Lightbox-h3"></h3>
-                        <p class="Lighbox-p"></p>
+                        <div class="Lightbox-title">
+                            <h2 class="Lightbox-h2">ZANZÍBAR</h2>
+                            <h3 class="Lightbox-h3">Playas Turquesas y Cultura Swahili (9 días de paraíso)</h3>
+                            <p class="Lightbox-p">
+                                Zanzíbar es el destino perfecto para cerrar un viaje por África con descanso y paisajes
+                                de ensueño.
+                                Este itinerario de 9 días combina playas de arena blanca, aguas cristalinas, pueblos
+                                costeros y la
+                                historia de Stone Town, ofreciendo una mezcla ideal de relax, cultura y experiencias
+                                marinas.
+                            </p>
+                        </div>
+                        <img class="Lightbox-img" src="./assets/zanzibar.webp"
+                            alt="Zanzíbar: playas turquesas y cultura swahili" loading="lazy">
                     </header>
                     <div class="Lightbox-carrousel">
                         <ul class="Lightbox-ul">
@@ -824,225 +842,242 @@
                             <li class="Lightbox-li">Día 7</li>
                             <li class="Lightbox-li">Día 8</li>
                             <li class="Lightbox-li">Día 9</li>
-                            <li class="Lightbox-li">Día 10</li>
-                            <li class="Lightbox-li">Día 11</li>
-                            <li class="Lightbox-li">Día 12</li>
                         </ul>
                         <div class="Lightbox-content">
-                            <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                            <!-- DÍA 1 -->
+                            <div class="Lightbox-text isVisible">
+                                <h4 class="Lightbox-h4">Llegada a Zanzíbar y primeras sensaciones</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">✈️ &nbsp; Llegada a Zanzíbar</li>
+                                            <li class="Column-li">🚗 &nbsp; Traslado al alojamiento</li>
+                                            <li class="Column-li">🏖️ &nbsp; Primer paseo por la playa</li>
+                                            <li class="Column-li">🌴 &nbsp; Atmósfera tropical y palmeras</li>
+                                            <li class="Column-li">🌅 &nbsp; Primer atardecer frente al Índico</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Empieza la desconexión: aire salado, luz cálida y ese ritmo lento que hace
+                                            que Zanzíbar se sienta
+                                            como una pausa perfecta. Hoy es para aterrizar, respirar y dejar que el
+                                            viaje cambie de marcha.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-llegada.webp"
+                                        alt="Llegada a Zanzíbar" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Stone Town: historia y cultura swahili</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">🏛️ &nbsp; Calles laberínticas de Stone Town</li>
+                                            <li class="Column-li">🚪 &nbsp; Puertas talladas y arquitectura
+                                                árabe-swahili</li>
+                                            <li class="Column-li">🕌 &nbsp; Mezquitas y plazas históricas</li>
+                                            <li class="Column-li">🛍️ &nbsp; Mercados y artesanía local</li>
+                                            <li class="Column-li">🍲 &nbsp; Street food y sabores especiados</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Stone Town es memoria viva: comercio, cultura y mezcla de mundos. Pasear por
+                                            sus callejones es
+                                            viajar en el tiempo entre aromas de especias, detalles tallados y una
+                                            energía única.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-stone-town.webp" alt="Stone Town"
+                                        loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Islas y arrecifes: snorkel en aguas turquesas</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">🤿 &nbsp; Snorkel en arrecifes</li>
+                                            <li class="Column-li">🐠 &nbsp; Peces tropicales y corales</li>
+                                            <li class="Column-li">⛵ &nbsp; Paseo en barco por el Índico</li>
+                                            <li class="Column-li">🏝️ &nbsp; Bancos de arena y calas</li>
+                                            <li class="Column-li">🧃 &nbsp; Pausa tropical junto al mar</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Hoy el plan es azul: agua cristalina, snorkel y la sensación de flotar sobre
+                                            un mundo de coral.
+                                            Un día perfecto para quienes quieren mar en estado puro.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-snorkel.webp"
+                                        alt="Snorkel en Zanzíbar" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Ruta de especias y esencia local</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">🌿 &nbsp; Plantaciones de especias</li>
+                                            <li class="Column-li">🧂 &nbsp; Clavo, canela, vainilla y nuez moscada</li>
+                                            <li class="Column-li">👃 &nbsp; Aromas y degustaciones</li>
+                                            <li class="Column-li">🏡 &nbsp; Vida rural y pequeñas aldeas</li>
+                                            <li class="Column-li">🍍 &nbsp; Fruta tropical fresca</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Zanzíbar también se descubre con el olfato. Entre hojas, cortezas y frutos,
+                                            entiendes por qué
+                                            se le llama la “isla de las especias”. Un día muy sensorial y auténtico.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-especias.webp"
+                                        alt="Ruta de las especias" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Bosque de Jozani y naturaleza tropical</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">🌳 &nbsp; Bosque de Jozani</li>
+                                            <li class="Column-li">🐒 &nbsp; Monos colobos (si hay avistamiento)</li>
+                                            <li class="Column-li">🌿 &nbsp; Senderos entre vegetación exuberante</li>
+                                            <li class="Column-li">🪵 &nbsp; Pasarelas en manglares</li>
+                                            <li class="Column-li">📸 &nbsp; Naturaleza en primer plano</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Un respiro verde entre tanta playa. Caminar por Jozani y los manglares
+                                            cambia el ritmo:
+                                            humedad, silencio y la sensación de estar en una isla profundamente viva.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-jozani.webp" alt="Bosque de Jozani"
+                                        loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Costa Este: playas de postal</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">🏖️ &nbsp; Arena blanca interminable</li>
+                                            <li class="Column-li">🌊 &nbsp; Bajamar y tonos turquesa</li>
+                                            <li class="Column-li">🐚 &nbsp; Paseo por la orilla</li>
+                                            <li class="Column-li">🧘 &nbsp; Relax y tiempo libre</li>
+                                            <li class="Column-li">🌅 &nbsp; Atardecer tropical</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Hoy es para disfrutar sin prisa. La Costa Este tiene ese look de paraíso:
+                                            palmeras, calma y mar
+                                            cambiando de color según la marea. Perfecto para descansar de verdad.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-costa-este.webp"
+                                        alt="Costa Este de Zanzíbar" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Dhow al atardecer y vida en el Índico</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">⛵ &nbsp; Paseo en dhow tradicional</li>
+                                            <li class="Column-li">🌅 &nbsp; Atardecer sobre el océano</li>
+                                            <li class="Column-li">🎶 &nbsp; Ambiente costero y brisa marina</li>
+                                            <li class="Column-li">📸 &nbsp; Fotos con luz dorada</li>
+                                            <li class="Column-li">🍹 &nbsp; Momento chill frente al mar</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Navegar en dhow al final del día es “Zanzíbar puro”. La luz baja, el mar se
+                                            calma y todo se vuelve
+                                            dorado. Uno de esos planes simples que se vuelven inolvidables.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-dhow.webp" alt="Dhow al atardecer"
+                                        loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Día libre: mar, spa o excursión opcional</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">🏖️ &nbsp; Playa y baño</li>
+                                            <li class="Column-li">🤿 &nbsp; Snorkel / mar abierto (opcional)</li>
+                                            <li class="Column-li">💆 &nbsp; Masaje o spa (opcional)</li>
+                                            <li class="Column-li">🍽️ &nbsp; Gastronomía swahili</li>
+                                            <li class="Column-li">🌴 &nbsp; Desconexión total</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Un día comodín para vivir la isla a tu ritmo: más playa, más mar o
+                                            simplemente parar.
+                                            Zanzíbar también es eso: tiempo para ti, sin agenda.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-libre.webp"
+                                        alt="Día libre en Zanzíbar" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
+                                <h4 class="Lightbox-h4">Despedida de Zanzíbar y regreso</h4>
                                 <div class="Lightbox-column Column">
                                     <div class="Column-left">
                                         <strong class="Column-strong">Qué verás hoy...</strong>
                                         <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
+                                            <li class="Column-li">☕ &nbsp; Último desayuno tropical</li>
+                                            <li class="Column-li">📸 &nbsp; Fotos finales frente al mar</li>
+                                            <li class="Column-li">🧳 &nbsp; Preparación de equipaje</li>
+                                            <li class="Column-li">🚗 &nbsp; Traslado al aeropuerto</li>
+                                            <li class="Column-li">✈️ &nbsp; Vuelo de regreso</li>
                                         </ul>
+
                                         <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
+                                        <p class="Column-p">
+                                            Cierre perfecto: te vas con el azul del Índico en la cabeza, la calma en el
+                                            cuerpo y la sensación
+                                            de haber vivido una isla que mezcla cultura, mar y paisajes de ensueño.
+                                        </p>
                                     </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
-                                <div class="Lightbox-column Column">
-                                    <div class="Column-left">
-                                        <strong class="Column-strong">Qué verás hoy...</strong>
-                                        <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                        </ul>
-                                        <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
-                                    </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
-                                <div class="Lightbox-column Column">
-                                    <div class="Column-left">
-                                        <strong class="Column-strong">Qué verás hoy...</strong>
-                                        <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                        </ul>
-                                        <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
-                                    </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="Lightbox-text">
-                                <h4 class="Lightbox-h4"></h4>
-                                <div class="Lightbox-column Column">
-                                    <div class="Column-left">
-                                        <strong class="Column-strong">Qué verás hoy...</strong>
-                                        <ul class="Column-ul">
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                            <li class="Column-li"></li>
-                                        </ul>
-                                        <strong class="Column-strong">Experiencia del día</strong>
-                                        <p class="Column-p"></p>
-                                    </div>
-                                    <img class="Column-image" src="" alt="" loading="lazy">
+                                    <img class="Column-image" src="./assets/zanzibar-regreso.webp"
+                                        alt="Regreso desde Zanzíbar" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -1051,6 +1086,8 @@
             </div>
         </div>
     </main>
+
+    <!--FOOTER -->
     <footer class="Footer">
         <div class="Footer-column">
             <a href="index.html" class="Footer-h1">en ruta</a>

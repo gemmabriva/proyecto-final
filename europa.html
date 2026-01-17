@@ -11,15 +11,12 @@
     <script src="js/continent.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header class="Header">
         <div class="Header-top">
             <div class="Header-ham">
@@ -50,6 +47,8 @@
             <a href="index.html" class="Header-button">Volver al mapa</a>
         </div>
     </header>
+
+    <!-- SECTION DE EUROPA -->
     <div class="Section Section-europa">
         <div class="Section-content">
             <h1 class="Section-h1">Europa</h1>
@@ -58,7 +57,11 @@
                 con alma y descubrir tradiciones que siguen vivas.</p>
         </div>
     </div>
+
+    <!-- MAIN DE EUROPA -->
     <main class="Main">
+
+        <!--MAIN-CARROUSEL: Listado de viajes con un breve resumen-->
         <div class="Main-carrousel">
             <div class="Main-arrow Main-arrow--prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -67,8 +70,10 @@
                         d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
                 </svg>
             </div>
+
+            <!-- CADA .MAIN-LI TIENE UN ID QUE VA CONECTADO CON EL ANCHOR DE LA PAGINA DESTINOS.HTML-->
             <ul class="Main-ul">
-                <li class="Main-li">
+                <li class="Main-li" id="noruega">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/funicular-floyen.webp"
@@ -99,13 +104,13 @@
                                 <span class="Resume-span">Duración: &nbsp; 10 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
                                     Roadtrip &nbsp; | &nbsp; Destinos: &nbsp; Noruega &nbsp; - &nbsp; Islandia</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--eeuu">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn Main-bttn--eeuu">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="Main-li">
+                <li class="Main-li" id="grecia">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/santorini.webp"
@@ -122,7 +127,7 @@
                     <div class="Main-content">
                         <h2 class="Main-h2">Grecia</h2>
                         <div class="Main-text">
-                            <h3 class="Main-h3">Islas, Historia y Mar Egeo (10 días mediterráneos)</h3>
+                            <h3 class="Main-h3">Islas, Historia y Mar Egeo (8 días mediterráneos)</h3>
                             <p class="Main-p">Grecia es el equilibrio perfecto entre historia y relax. Este itinerario
                                 de 10 días combina la Atenas clásica con algunas de las islas más bellas del mar Egeo.
                                 Ruinas milenarias, pueblos blancos, playas de aguas cristalinas y atardeceres
@@ -134,17 +139,17 @@
                                     <li class="Resume-li">🌅 Santorini</li>
                                     <li class="Resume-li">🏖️ Playas paradisíacas</li>
                                 </ul>
-                                <span class="Resume-span">Duración: &nbsp; 10 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
+                                <span class="Resume-span">Duración: &nbsp; 8 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
                                     Ferry &nbsp; | &nbsp; Destinos: &nbsp; Atenas &nbsp; - &nbsp; Mykonos &nbsp; -
                                     &nbsp; Santorini</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="Main-li">
+                <li class="Main-li" id="austria">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/reloj-astronomico.webp"
@@ -163,8 +168,8 @@
                     <div class="Main-content">
                         <h2 class="Main-h2">Austria & Alemania</h2>
                         <div class="Main-text">
-                            <h3 class="Main-h3">Pueblos de Cuento entre Austria y Alemania (10 días slow travel)</h3>
-                            <p class="Main-p">Este itinerario de 10 días recorre dos de los países más encantadores de
+                            <h3 class="Main-h3">Pueblos de Cuento entre Austria y Alemania (8 días slow travel)</h3>
+                            <p class="Main-p">Este itinerario de 8 días recorre dos de los países más encantadores de
                                 Centroeuropa, entre lagos alpinos, cascos históricos medievales y pueblos que parecen
                                 sacados de un cuento. Una ruta ideal para viajar sin prisas, disfrutar de la
                                 arquitectura tradicional, la naturaleza y el encanto de las pequeñas localidades.</p>
@@ -175,12 +180,12 @@
                                     <li class="Resume-li">🌊 Lagos de montaña</li>
                                     <li class="Resume-li">🚗 Roadtrip tranquilo</li>
                                 </ul>
-                                <span class="Resume-span">Duración: &nbsp; 10 Días &nbsp; | &nbsp; Modo: &nbsp; Roadtrip
+                                <span class="Resume-span">Duración: &nbsp; 8 Días &nbsp; | &nbsp; Modo: &nbsp; Roadtrip
                                     / Tren &nbsp; | &nbsp; Destinos: &nbsp; Austria &nbsp; - &nbsp; Alemania</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -195,7 +200,11 @@
                         d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
                 </svg>
             </div>
-            <div class="Main-lightbox Lightbox" id="noruega">
+
+            <!--LIGHTBOX-CARROUSEL: Detalle del viaje con itinerario diario-->
+
+            <!-- LIGHTBOX DE EUROPA DEL NORTE -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -495,7 +504,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Main-lightbox Lightbox" id="grecia">
+
+            <!-- LIGHTBOX DE GRECIA -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -746,7 +757,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Main-lightbox Lightbox" id="Lightbox-patagonia">
+
+            <!-- LIGHTBOX DE AUSTRIA & ALEMANIA-->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -804,7 +817,7 @@
                                             Descubre la capital de Baviera recorriendo plazas, cervecerías históricas y
                                             rincones
                                             llenos de vida. La mezcla de tradición y modernidad te recibe desde el
-                                            primer momento. :contentReference[oaicite:2]{index=2}
+                                            primer momento.
                                         </p>
                                     </div>
                                     <img class="Column-image" src="./assets/3fad5011-0f73-400a-9b0a-9e899559293b.jpg"
@@ -829,7 +842,6 @@
                                         <p class="Column-p">
                                             Sube hasta el famoso castillo que inspiró a cuentos de hadas y contempla los
                                             paisajes alpinos que rodean uno de los símbolos más conocidos de Alemania.
-                                            :contentReference[oaicite:3]{index=3}
                                         </p>
                                     </div>
                                     <img class="Column-image" src="./assets/97f5a943-439a-4cae-8a10-1fcefb3afe9f.jpg"
@@ -881,7 +893,6 @@
                                             Cruza la frontera hacia Austria para adentrarte en la región alpina, un
                                             paisaje
                                             donde las montañas y los valles te acompañan en cada kilómetro.
-                                            :contentReference[oaicite:5]{index=5}
                                         </p>
                                     </div>
                                     <img class="Column-image" src="./assets/4621c248-57ba-438f-bf6a-7e42cb59e22b.jpg"
@@ -905,9 +916,7 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Vive el ambiente alpino en Innsbruck, donde la arquitectura tradicional y
-                                            las montañas del Tirol te ofrecen un día lleno de descubrimientos.
-                                            :contentReference[oaicite:6]{index=6}
-                                        </p>
+                                            las montañas del Tirol te ofrecen un día lleno de descubrimientos.                                        </p>
                                     </div>
                                     <img class="Column-image" src="./assets/554c1b1c-1080-462c-86c9-5929aa4b4dab.jpg"
                                         alt="Innsbruck, Tirol" loading="lazy">
@@ -930,7 +939,7 @@
                                         <strong class="Column-strong">Experiencia del día</strong>
                                         <p class="Column-p">
                                             Tierra natal de Mozart, Salzburgo combina arte, historia y encanto alpino en
-                                            cada una de sus calles y plazas. :contentReference[oaicite:7]{index=7}
+                                            cada una de sus calles y plazas.
                                         </p>
                                     </div>
                                     <img class="Column-image" src="./assets/bfaa3fb9-569d-4c52-bcb0-1c81ae56a377.jpg"
@@ -955,7 +964,7 @@
                                         <p class="Column-p">
                                             Disfruta de la grandeza de Viena, donde la vida imperial se respira en cada
                                             palacio,
-                                            museo y café tradicional. :contentReference[oaicite:8]{index=8}
+                                            museo y café tradicional.
                                         </p>
                                     </div>
                                     <img class="Column-image" src="./assets/2da64732-79b3-483f-b93f-2318a1c7aef7.jpg"
@@ -981,7 +990,6 @@
                                         <p class="Column-p">
                                             Fin de este emocionante recorrido por Baviera y Austria, con recuerdos
                                             de paisajes inolvidables, ciudades vibrantes y tradiciones centenarias.
-                                            :contentReference[oaicite:11]{index=11}
                                         </p>
                                     </div>
                                     <img class="Column-image" src="./assets/d273b745-b117-4ae7-8ca0-616372a19764.jpg"
@@ -994,6 +1002,8 @@
             </div>
         </div>
     </main>
+
+    <!-- FOOTER -->
     <footer class="Footer">
         <div class="Footer-column">
             <a href="index.html" class="Footer-h1">en ruta</a>

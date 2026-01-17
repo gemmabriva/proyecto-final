@@ -11,14 +11,11 @@
     <script src="js/continent.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <body>
+
+    <!-- HEADER -->
     <header class="Header">
         <div class="Header-top">
             <div class="Header-ham">
@@ -49,6 +46,8 @@
             <a href="index.html" class="Header-button">Volver al mapa</a>
         </div>
     </header>
+
+    <!-- SECTION AMERICA DEL SUR -->
     <div class="Section Section-america-sur">
         <div class="Section-content">
             <h1 class="Section-h1">América del sur</h1>
@@ -57,7 +56,11 @@
                 ruinas milenarias.</p>
         </div>
     </div>
+
+    <!-- MAIN AMERICA DEL SUR -->
     <main class="Main">
+
+        <!--MAIN-CARROUSEL: Listado de viajes con un breve resumen-->
         <div class="Main-carrousel">
             <div class="Main-arrow Main-arrow--prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -66,8 +69,10 @@
                         d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
                 </svg>
             </div>
+
+            <!-- CADA .MAIN-LI TIENE UN ID QUE VA CONECTADO CON EL ANCHOR DE LA PAGINA DESTINOS.HTML-->
             <ul class="Main-ul">
-                <li class="Main-li">
+                <li class="Main-li" id="peru">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="assets/montana-colores.webp"
@@ -84,8 +89,8 @@
                     <div class="Main-content">
                         <h2 class="Main-h2">Perú</h2>
                         <div class="Main-text">
-                            <h3 class="Main-h3">Historia Inca y Paisajes Andinos (13 días de cultura y aventura)</h3>
-                            <p class="Main-p">Un viaje al corazón del antiguo Imperio Inca. Este itinerario de 12 días
+                            <h3 class="Main-h3">Historia Inca y Paisajes Andinos (14 días de cultura y aventura)</h3>
+                            <p class="Main-p">Un viaje al corazón del antiguo Imperio Inca. Este itinerario de 14 días
                                 recorre lo mejor de Perú: la energía histórica de Lima, el encanto colonial de Cusco, el
                                 misticismo del Valle Sagrado y la magia de Machu Picchu. Todo ello combinado con
                                 paisajes andinos, gastronomía de primer nivel y experiencias culturales únicas</p>
@@ -96,17 +101,17 @@
                                     <li class="Resume-li">⛰️ Valle Sagrado</li>
                                     <li class="Resume-li">🌊 Lima gastronómica</li>
                                 </ul>
-                                <span class="Resume-span">Duración: &nbsp; 13 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
+                                <span class="Resume-span">Duración: &nbsp; 14 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
                                     Tren &nbsp; | &nbsp; Destinos: &nbsp; Lima &nbsp; - &nbsp; Cusco &nbsp; - &nbsp;
                                     Valle Sagrado</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--peru">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn Main-bttn--peru">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="Main-li">
+                <li class="Main-li" id="patagonia">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/ushuaia.webp" alt="Vista aérea de Ushuaia, Argentina."
@@ -125,8 +130,8 @@
                     <div class="Main-content">
                         <h2 class="Main-h2">Patagonia</h2>
                         <div class="Main-text">
-                            <h3 class="Main-h3">Glaciares y Fin del Mundo (15 días de naturaleza salvaje)</h3>
-                            <p class="Main-p">La Patagonia es sinónimo de inmensidad. Este itinerario de 15 días te
+                            <h3 class="Main-h3">Glaciares y Fin del Mundo (12 días de naturaleza salvaje)</h3>
+                            <p class="Main-p">La Patagonia es sinónimo de inmensidad. Este itinerario de 12 días te
                                 lleva por Argentina y Chile explorando glaciares, montañas icónicas y paisajes que
                                 parecen de otro planeta. Desde El Calafate y el glaciar Perito Moreno hasta Torres del
                                 Paine y Ushuaia, un viaje épico para amantes de la naturaleza.</p>
@@ -137,16 +142,16 @@
                                     <li class="Resume-li">🥾 Trekking mítico</li>
                                     <li class="Resume-li">❄️ Ushuaia</li>
                                 </ul>
-                                <span class="Resume-span">Duración: &nbsp; 15 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
+                                <span class="Resume-span">Duración: &nbsp; 12 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
                                     Roadtrip &nbsp; | &nbsp; Destinos: &nbsp; AR &nbsp; - &nbsp; CL &nbsp;</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--patagonia">Explorar más</button>
+                            <div class="Main-info"><div class="Main-info">
+                                <button class="Main-bttn Main-bttn--patagonia">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
-                <li class="Main-li">
+                <li class="Main-li" id="brasil">
                     <div class="Main-images Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/cataratas-iguazu.webp"
@@ -163,8 +168,8 @@
                     <div class="Main-content">
                         <h2 class="Main-h2">Brasil</h2>
                         <div class="Main-text">
-                            <h3 class="Main-h3">Ritmo, Playas y Naturaleza (10 días de energía pura)</h3>
-                            <p class="Main-p">Brasil es alegría, color y diversidad. Este itinerario de 10 días combina
+                            <h3 class="Main-h3">Ritmo, Playas y Naturaleza (11 días de energía pura)</h3>
+                            <p class="Main-p">Brasil es alegría, color y diversidad. Este itinerario de 11 días combina
                                 la vibrante Río de Janeiro, las playas paradisíacas y una de las maravillas naturales
                                 del planeta: las Cataratas de Iguazú. Un viaje perfecto para quienes buscan cultura,
                                 fiesta y paisajes espectaculares.</p>
@@ -175,12 +180,12 @@
                                     <li class="Resume-li">💦 Cataratas de Iguazú</li>
                                     <li class="Resume-li">🎶 Cultura brasileña</li>
                                 </ul>
-                                <span class="Resume-span">Duración: &nbsp; 10 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
+                                <span class="Resume-span">Duración: &nbsp; 11 Días &nbsp; | &nbsp; Modo: &nbsp; Avion /
                                     Urbano &nbsp; | &nbsp; Destinos: &nbsp; Rio &nbsp; - &nbsp; Iguazú &nbsp;</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--brasil">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn Main-bttn--patagonia">Explorar más</button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -195,7 +200,11 @@
                         d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
                 </svg>
             </div>
-            <div class="Main-lightbox Lightbox" id="peru">
+
+            <!--LIGHTBOX-CARROUSEL: Detalle del viaje con itinerario diario-->
+
+            <!-- LIGHTBOX DE PERÚ -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -209,7 +218,7 @@
                     <header class="Lightbox-header">
                         <div class="Lightbox-title">
                             <h2 class="Lightbox-h2">Perú</h2>
-                            <h3 class="Lightbox-h3">De Machu Picchu al Salar de Uyuni (13 días)</h3>
+                            <h3 class="Lightbox-h3">De Machu Picchu al Salar de Uyuni (14 días)</h3>
                             <p class="Lightbox-p">Un viaje a Perú es como una llamada a la aventura: un destino que, con
                                 sus paisajes atemporales, atrae irresistiblemente a los viajeros. Tierra de grandes
                                 espacios y un rico legado cultural, este país es un escenario perfecto para los amantes
@@ -238,6 +247,8 @@
                             <li class="Lightbox-li">Día 14</li>
                         </ul>
                         <div class="Lightbox-content">
+
+                            <!-- DÍA 1 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Llegada a Lima</h4>
                                 <div class="Lightbox-column Column">
@@ -261,6 +272,8 @@
                                         alt="Llegada a Lima" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Rumbo a Cusco</h4>
                                 <div class="Lightbox-column Column">
@@ -282,6 +295,7 @@
                                         alt="El oasis de La Huacahina" loading="lazy">
                                 </div>
                             </div>
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Cusco y Valle Sagrado</h4>
                                 <div class="Lightbox-column Column">
@@ -303,6 +317,8 @@
                                         alt="La gran pirámide de Lima" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Machu Picchu</h4>
                                 <div class="Lightbox-column Column">
@@ -324,6 +340,8 @@
                                         alt="La ciudad de los reyes" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Machu Picchu y regreso a Cusco</h4>
                                 <div class="Lightbox-column Column">
@@ -345,6 +363,8 @@
                                         alt="El Valle Sagrado" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Dia libre por Cusco</h4>
                                 <div class="Lightbox-column Column">
@@ -366,6 +386,8 @@
                                         alt="Monumento histórico de Machu Picchu" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Rumbo a Puno y el Lago Titicaca</h4>
                                 <div class="Lightbox-column Column">
@@ -387,6 +409,8 @@
                                         alt="Centro arqueológico de Raqchi" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Islas de Titicaca</h4>
                                 <div class="Lightbox-column Column">
@@ -408,6 +432,8 @@
                                         alt="Paseo en barco por el lago Titicaca" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Rumbo a la Paz</h4>
                                 <div class="Lightbox-column Column">
@@ -429,6 +455,8 @@
                                         alt="La ciuda de la Paz" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 10 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Salar de Uyuni</h4>
                                 <div class="Lightbox-column Column">
@@ -450,6 +478,8 @@
                                         alt="Salar de Uyuni" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 11 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Lagunas de colores</h4>
                                 <div class="Lightbox-column Column">
@@ -471,6 +501,8 @@
                                         alt="Lagunas multicolores" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 12 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Ojos de Agua y géiseres</h4>
                                 <div class="Lightbox-column Column">
@@ -492,6 +524,8 @@
                                         alt="La reserva Nacional Eduardo Avaroa" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 13 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Ruta a Huayllajara</h4>
                                 <div class="Lightbox-column Column">
@@ -513,6 +547,8 @@
                                         alt="Sud Lípez" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 14 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Retorno a La Paz</h4>
                                 </h4>
@@ -539,7 +575,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Main-lightbox Lightbox" id="patagonia">
+
+            <!-- LIGHTBOX DE PATAGONIA -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -561,6 +599,7 @@
                                 alberga más de 40 glaciares y enormes lagos como el Viedma y el Argentino. Un destino
                                 inolvidable para los amantes de la naturaleza y la fotografía.</p>
                         </div>
+                        <img class="Lightbox-img" src="./assets/patagonia.webp" alt="patagonia">
                     </header>
                     <div class="Lightbox-carrousel">
                         <ul class="Lightbox-ul">
@@ -578,6 +617,8 @@
                             <li class="Lightbox-li">Día 12</li>
                         </ul>
                         <div class="Lightbox-content">
+
+                            <!-- DÍA 1 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">¡Bienvenidos a Buenos Aires!</h4>
                                 <div class="Lightbox-column Column">
@@ -600,6 +641,8 @@
                                         alt="Llegada a Buenos Aires" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">City Tour por Buenos Aires</h4>
                                 <div class="Lightbox-column Column">
@@ -623,6 +666,8 @@
                                         alt="Barrio de San Telmo" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Llegada a El Calafate</h4>
                                 <div class="Lightbox-column Column">
@@ -645,6 +690,8 @@
                                         alt="El Calafate" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Glaciar Perito Moreno</h4>
                                 <div class="Lightbox-column Column">
@@ -667,6 +714,8 @@
                                         alt="Glaciar Perito Moreno" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Estancia Patagónica Nibepo Aike</h4>
                                 <div class="Lightbox-column Column">
@@ -689,6 +738,8 @@
                                         alt="Estancia en Nibepo Aike" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Día libre en El Calafate</h4>
                                 <div class="Lightbox-column Column">
@@ -711,6 +762,8 @@
                                         alt="Paisaje natural en El Calafate" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Vuelo a Bariloche</h4>
                                 <div class="Lightbox-column Column">
@@ -733,6 +786,8 @@
                                         alt="Ruta por Bariloche" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Bariloche en Mountain Bike</h4>
                                 <div class="Lightbox-column Column">
@@ -755,6 +810,8 @@
                                         alt="Ruta en Mountain Bike por Bariloche" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Relajación con Yoga en la Naturaleza</h4>
                                 <div class="Lightbox-column Column">
@@ -777,6 +834,8 @@
                                         alt="Dia de relajación en Bariloche" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 10 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Kayak en Lagos de Bariloche</h4>
                                 <div class="Lightbox-column Column">
@@ -798,6 +857,8 @@
                                         alt="Kayak en los lagos de Bariloche" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 11 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Regreso a Buenos Aires</h4>
                                 <div class="Lightbox-column Column">
@@ -819,6 +880,8 @@
                                         alt="Dia libre en la vuelta a Buenos Aires" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 12-->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Regreso a Casa</h4>
                                 <div class="Lightbox-column Column">
@@ -844,7 +907,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Main-lightbox Lightbox" id="Lightbox-brasil">
+
+            <!-- LIGHTBOX DE BRASIL -->
+            <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
@@ -858,7 +923,7 @@
                     <header class="Lightbox-header">
                         <div class="Lightbox-title">
                             <h2 class="Lightbox-h2">Brasil</h2>
-                            <h3 class="Lightbox-h3">De las Cataratas del Iguazú a la Costa Verde (12 días)</h3>
+                            <h3 class="Lightbox-h3">De las Cataratas del Iguazú a la Costa Verde (11 días)</h3>
                             <p class="Lightbox-p">Un viaje a Brasil es la oportunidad perfecta para una escapada llena
                                 de color. Desde Río de Janeiro hasta los animados barrios de São Paulo, el país late al
                                 ritmo de la samba y las tradiciones locales. Para una inmersión en plena naturaleza,
@@ -885,6 +950,8 @@
                             <li class="Lightbox-li">Día 11</li>
                         </ul>
                         <div class="Lightbox-content">
+
+                            <!-- DÍA 1 -->
                             <div class="Lightbox-text isVisible">
                                 <h4 class="Lightbox-h4">Llegada a Foz do Iguaçu</h4>
                                 <div class="Lightbox-column Column">
@@ -907,6 +974,8 @@
                                         alt="Llegada a Foz de Iguazú" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Cataratas del Iguazú (lado brasileño)</h4>
                                 <div class="Lightbox-column Column">
@@ -929,6 +998,8 @@
                                         alt="Las Cataratas de Iguazú" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Cataratas del Iguazú (lado argentino)</h4>
                                 <div class="Lightbox-column Column">
@@ -951,6 +1022,8 @@
                                         alt="Las Cataratas de Iguazú des de Argentina" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Vuelo a Río de Janeiro</h4>
                                 <div class="Lightbox-column Column">
@@ -972,6 +1045,8 @@
                                         alt="" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Río de Janeiro: Cristo Redentor y Pan de Azúcar</h4>
                                 <div class="Lightbox-column Column">
@@ -993,6 +1068,8 @@
                                         alt="Día con las mejores vistas de Río" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Río de Janeiro: cultura y barrios</h4>
                                 <div class="Lightbox-column Column">
@@ -1014,6 +1091,8 @@
                                         alt="Barrio de Santa Teresa" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Río de Janeiro: playas míticas</h4>
                                 <div class="Lightbox-column Column">
@@ -1035,6 +1114,8 @@
                                         alt="Playas de la costa de Río de Janeiro" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Rumbo a la Costa Verde</h4>
                                 <div class="Lightbox-column Column">
@@ -1056,6 +1137,8 @@
                                         alt="Paraty" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Paraty: historia y encanto colonial</h4>
                                 <div class="Lightbox-column Column">
@@ -1077,6 +1160,8 @@
                                         alt="Centro histórico de Paraty" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 10 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Islas y playas de la Costa Verde</h4>
                                 <div class="Lightbox-column Column">
@@ -1098,6 +1183,8 @@
                                         alt="playas de Ilha Grande" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 11 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Regreso a Río y fin del Viaje</h4>
                                 <div class="Lightbox-column Column">
@@ -1126,6 +1213,8 @@
             </div>
         </div>
     </main>
+
+    <!-- FOOTER-->
     <footer class="Footer">
         <div class="Footer-column">
             <a href="index.html" class="Footer-h1">en ruta</a>

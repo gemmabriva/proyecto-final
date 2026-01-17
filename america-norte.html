@@ -11,12 +11,7 @@
     <script src="js/continent.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +47,7 @@
         </div>
     </header>
 
-    <!--SECTION -->
+    <!--SECTION DE AMERICA DEL NORTE -->
 
     <div class="Section Section-america-norte">
         <div class="Section-content">
@@ -62,10 +57,10 @@
         </div>
     </div>
 
-    <!--MAIN -->
-    <!--MAIN-CARROUSEL: Listado de viajes con un breve resumen-->
-    <!--LIGHTBOX-CARROUSEL: Detalle del viaje con itinerario diario-->
+    <!--MAIN DE AMERICA DEL NORTE -->
     <main class="Main">
+
+        <!--MAIN-CARROUSEL: Listado de viajes con un breve resumen-->
         <div class="Main-carrousel">
             <div class="Main-arrow Main-arrow--prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -74,8 +69,10 @@
                         d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753" />
                 </svg>
             </div>
+
+            <!-- CADA .MAIN-LI TIENE UN ID QUE VA CONECTADO CON EL ANCHOR DE LA PAGINA DESTINOS.HTML-->
             <ul class="Main-ul">
-                <li class="Main-li Main-li--eeuu">
+                <li class="Main-li Main-li--eeuu" id="eeuu">
                     <div class="Main-img Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/gran-canon.webp"
@@ -97,7 +94,7 @@
                                 luces de Las Vegas y la inmensidad del Gran Cañón, hemos condensado lo mejor de
                                 California, Nevada y Arizona en un roadtrip inolvidable. Descubre la majestuosidad de
                                 los parques nacionales, la energía urbana y los paisajes que te dejarán sin aliento.
-                                ¿Listo para arrancar el motor?</p>
+                            </p>
                             <div class="Main-resume Resume">
                                 <ul class="Resume-ul">
                                     <li class="Resume-li">🌉 &nbsp; Golden Gate</li>
@@ -106,15 +103,16 @@
                                     <li class="Resume-li">🏜️ &nbsp; Gran Cañon</li>
                                 </ul>
                                 <span class="Resume-span">Duración: &nbsp; 12 Días &nbsp; | &nbsp; Modo: &nbsp; Roadtrip
-                                    &nbsp; | &nbsp; Destinos: &nbsp; CA &nbsp; - &nbsp; NV &nbsp; - &nbsp; AZ</span>
+                                    &nbsp; | &nbsp; Destinos: &nbsp; CA &nbsp; - &nbsp; NV &nbsp; - &nbsp; AZ
+                                </span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--eeuu" id="eeuu">Explorar más</button>
-                        </div>
+                            <div class="Main-info">
+                                <button class="Main-bttn Main-bttn--eeuu">Explorar más</button>
+                            </div>                        
+                        </div>                    
                     </div>
                 </li>
-                <li class="Main-li Main-li--Canada">
+                <li class="Main-li Main-li--Canada" id="canada">
                     <div class="Main-img Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/canada-placee.webp"
@@ -148,13 +146,13 @@
                                 <span class="Resume-span">Duración: &nbsp; 12 Días &nbsp; | &nbsp; Modo: &nbsp; Roadtrip
                                     / Avión &nbsp; | &nbsp; Destinos: &nbsp; BC &nbsp; - &nbsp; AB</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--Canada">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn Main-bttn--Canada">Explorar más</button>
+                            </div>                            
                         </div>
                     </div>
                 </li>
-                <li class="Main-li Main-li--nymx">
+                <li class="Main-li Main-li--nymx" id="nymx">
                     <div class="Main-img Images">
                         <div class="Images-grid">
                             <img class="Images-img" src="./assets/manhattan.webp"
@@ -190,9 +188,9 @@
                                 <span class="Resume-span">Duración: &nbsp; 10 Días &nbsp; | &nbsp; Modo: &nbsp; Avión /
                                     Urbano &nbsp; | &nbsp; Destinos: &nbsp; NY &nbsp; - &nbsp; MEX</span>
                             </div>
-                        </div>
-                        <div class="Main-info">
-                            <button class="Main-bttn Main-bttn--nymx">Explorar más</button>
+                            <div class="Main-info">
+                                <button class="Main-bttn Main-bttn--nymx">Explorar más</button>
+                            </div>                        
                         </div>
                     </div>
                 </li>
@@ -207,6 +205,11 @@
                         d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
                 </svg>
             </div>
+
+            <!--LIGHTBOX-CARROUSEL: Detalle del viaje con itinerario diario-->
+
+
+            <!-- LIGHTBOX DE EEUU -->
             <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
@@ -249,6 +252,8 @@
                             <li class="Lightbox-li">Día 12</li>
                         </ul>
                         <div class="Lightbox-content">
+
+                            <!-- DÍA 1 -->
                             <div class="Lightbox-text isVisible">
                                 <h4 class="Lightbox-h4">Primer Día en San Francisco</h4>
                                 <div class="Lightbox-column Column">
@@ -272,6 +277,8 @@
                                         alt="Primer dia en San Francisco" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">El corazón cultural de San Francisco</h4>
                                 <div class="Lightbox-column Column">
@@ -295,6 +302,8 @@
                                         alt="Segundo dia en San Francisco" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">De la ciudad al corazón de la naturaleza</h4>
                                 <div class="Lightbox-column Column">
@@ -316,6 +325,8 @@
                                         alt="Des de la ciudad al corazón de la naturaleza" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Yosemite: el gran icono natural</h4>
                                 <div class="Lightbox-column Column">
@@ -339,6 +350,8 @@
                                         alt="Yosemite, el icono natural" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Entre gigantes: Parque Nacional de Sequoia</h4>
                                 <div class="Lightbox-column Column">
@@ -363,6 +376,8 @@
                                         alt="Parque Nacional de Sequoia" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Death Valley: el desierto extremo</h4>
                                 <div class="Lightbox-column Column">
@@ -386,6 +401,8 @@
                                         alt="Death Valley" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Las Vegas: luces, hoteles y espectáculo</h4>
                                 <div class="Lightbox-column Column">
@@ -410,6 +427,8 @@
                                         alt="Las Vegas" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8-->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Zion: cañones y acantilados rojos</h4>
                                 <div class="Lightbox-column Column">
@@ -433,6 +452,8 @@
                                         alt=" Cañones y acantilados rojos de Zion" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Bryce Canyon: el anfiteatro de hoodoos</h4>
                                 <div class="Lightbox-column Column">
@@ -456,6 +477,8 @@
                                         alt="Bryce Canyon" loading="lazy">
                                 </div>
                             </div>
+
+                            <!--DÍA 10 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Antelope Canyon & Monument Valley</h4>
                                 <div class="Lightbox-column Column">
@@ -479,6 +502,8 @@
                                         alt="Antelope Canyon" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 11 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Gran Cañón: maravilla natural</h4>
                                 <div class="Lightbox-column Column">
@@ -502,6 +527,8 @@
                                         alt="Gran Cañon" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 12 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Fin del roadtrip y regreso</h4>
                                 <div class="Lightbox-column Column">
@@ -529,6 +556,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- LIGHTBOX DE CANADÁ -->
             <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
@@ -572,6 +601,8 @@
                             <li class="Lightbox-li">Día 12</li>
                         </ul>
                         <div class="Lightbox-content">
+
+                            <!-- DÍA 1 -->
                             <div class="Lightbox-text isVisible">
                                 <h4 class="Lightbox-h4">Llegada y primeras vistas de Vancouver</h4>
                                 <div class="Lightbox-column Column">
@@ -595,6 +626,8 @@
                                         alt="Primer dia en Vancouver" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Vancouver: Cultura y naturaleza</h4>
                                 <div class="Lightbox-column Column">
@@ -617,6 +650,8 @@
                                         alt="Segundo dia en Vancouver" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Victoria & Jardines Butchart</h4>
                                 <div class="Lightbox-column Column">
@@ -640,6 +675,8 @@
                                         alt="Día mágico en Victoria" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Whistler y la Sea-to-Sky Highway</h4>
                                 <div class="Lightbox-column Column">
@@ -662,6 +699,8 @@
                                         alt="Día perfectoe en Whistler" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">De la costa a las Montañas Rocosas</h4>
                                 <div class="Lightbox-column Column">
@@ -684,6 +723,8 @@
                                         alt="Sun Peaks" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Parque Nacional Jasper</h4>
                                 <div class="Lightbox-column Column">
@@ -706,6 +747,8 @@
                                         alt="Rumbo a Jasper" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Icefields Parkway hacia Banff</h4>
                                 <div class="Lightbox-column Column">
@@ -728,6 +771,8 @@
                                         alt="Más excursiones por Jasper" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Banff y sus lagos icónicos</h4>
                                 <div class="Lightbox-column Column">
@@ -750,6 +795,8 @@
                                         alt="Lagos iconicos de Banff" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Parque Nacional Yoho</h4>
                                 <div class="Lightbox-column Column">
@@ -772,6 +819,8 @@
                                         alt="Parque Nacional Yoho" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 10 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Últimos paisajes de montaña</h4>
                                 <div class="Lightbox-column Column">
@@ -794,6 +843,8 @@
                                         alt="Ultimos días de montaña" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 11 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Calgary</h4>
                                 <div class="Lightbox-column Column">
@@ -816,6 +867,8 @@
                                         alt="Calgary" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 12 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Fin del viaje</h4>
                                 <div class="Lightbox-column Column">
@@ -842,6 +895,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- LIGHTBOX DE NY - MX -->
             <div class="Main-lightbox Lightbox">
                 <div class="Lightbox">
                     <div class="Lightbox-button">
@@ -880,6 +935,8 @@
                             <li class="Lightbox-li">Día 10</li>
                         </ul>
                         <div class="Lightbox-content">
+
+                            <!-- DÍA 1 -->
                             <div class="Lightbox-text isVisible">
                                 <h4 class="Lightbox-h4">Llegada a Ciudad de México y vuelo a Cancún</h4>
                                 <div class="Lightbox-column Column">
@@ -902,6 +959,8 @@
                                         alt="Primer dia en Mexico" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 2 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Playa del Carmen y exploración costera</h4>
                                 <div class="Lightbox-column Column">
@@ -924,6 +983,8 @@
                                         alt="Dia en play del Carmen" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 3 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Cenotes y naturaleza maya</h4>
                                 <div class="Lightbox-column Column">
@@ -946,6 +1007,8 @@
                                         alt="Buceo entre cenotes naturales" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 4 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Ruinas de Tulum y costa maya</h4>
                                 <div class="Lightbox-column Column">
@@ -968,6 +1031,8 @@
                                         alt="Ruinas maya en Tulum" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 5 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Vuelo a Nueva York</h4>
                                 <div class="Lightbox-column Column">
@@ -989,6 +1054,8 @@
                                         alt="Llegada a Nueva York" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 6 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Manhattan: Downtown y Estatua de la Libertad</h4>
                                 <div class="Lightbox-column Column">
@@ -1011,6 +1078,8 @@
                                         alt="Paseo por Manhattan" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 7 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Midtown y Central Park</h4>
                                 <div class="Lightbox-column Column">
@@ -1033,6 +1102,8 @@
                                         alt="Paseo por Central Park" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 8 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Barrios icónicos y Puente de Brooklyn</h4>
                                 <div class="Lightbox-column Column">
@@ -1055,6 +1126,8 @@
                                         alt="Paseo a pie por el puente de Brooklyn" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 9 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Cultura y ocio a tu ritmo</h4>
                                 <div class="Lightbox-column Column">
@@ -1077,6 +1150,8 @@
                                         alt="Dia libre para terminar de disfrutar de Nueva York" loading="lazy">
                                 </div>
                             </div>
+
+                            <!-- DÍA 10 -->
                             <div class="Lightbox-text">
                                 <h4 class="Lightbox-h4">Regreso a casa</h4>
                                 <div class="Lightbox-column Column">
