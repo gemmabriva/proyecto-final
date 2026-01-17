@@ -677,16 +677,21 @@ body{
         min-height: 90vh;
     }
     .Lightbox-text{
-        min-height: 85vh;
+        min-height: 75vh;
 
         padding: 1rem 0;
+        
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: start;
+        gap: 3rem;
     }
     .Lightbox-column{
-
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
     }
     .Column-image{
         width: 80%;

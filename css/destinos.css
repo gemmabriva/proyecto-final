@@ -143,6 +143,8 @@ body{
 
 @media (max-width: 820px){
     .Main-destino:hover{
-        display: none;
+        width: 15rem;
+        transition: none;
     }
+
 }
