@@ -209,8 +209,8 @@ body{
 
         padding: 0 1rem;
     }
-    .Header-input{
-        width: 50%;
+    .Header-form{
+        width: 90%;
     }
     .bi-search{
         display: none;
