@@ -72,7 +72,7 @@ let contador = 0
 // if (window.location.href.includes(`#australia`)){
 //     contador = 0
 // }
-// if(window.location.href.includes(`#nueva-zelanda`)){
+// if(window.location.href.includes(`#nuevazelanda`)){
 //     contador = 1
 // }
 
@@ -111,7 +111,7 @@ const hashIndexMap = {
 
   // Oceanía
   australia: 0,
-  'nueva-zelanda': 1
+  nuevazelanda: 1
 }
 
 const hash = window.location.hash.replace('#', '')
