@@ -58,10 +58,10 @@ body{
     --button-color-text: black;
     --h4-font: italic 600 clamp(.9rem, 7vw, 1.8rem) "Merriweather";
     --stroke-color: #D1D1D1;
-    --second-background-color: #2D3748;
-
-    
+    --second-background-color: #2D3748;  
 }
+
+/*HEADER GENERAL UTILIZADO EN TODAS LAS PÁGINAS */
 .Header{
     width: 100%;
     min-height: 20vh;
@@ -72,6 +72,8 @@ body{
     justify-content: start;
     align-items: center;
 }
+
+/* BARRA SUPERIOR */
 .Header-top{
     width: 100%;
     min-height: 10vh;
@@ -100,11 +102,15 @@ body{
     
     transform: translateY(-100%);
     opacity: 0;
+
+    pointer-events: none;
 }
 .Header-nav.isActive{
 
     transform: translateY(0);
     opacity: 1;
+
+    pointer-events: auto;
 }
 .Header-ham{
 
@@ -123,6 +129,8 @@ body{
 
     justify-items: start;
 }
+
+/* BUSCADOR */
 .Header-search{
     width: 30%;
     min-height: 6vh;
@@ -141,6 +149,8 @@ body{
     min-height: 5vh;
     background-color: var(--second-background-color);
 
+    padding: 0 1rem;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -157,6 +167,8 @@ body{
 
     color: var(--stroke-color);
 }
+
+/* BOTÓN DEL HEADER QUE TE LLEVA AL MAPA */
 .Header-button{
     width: 100%;
     min-height: 1.25rem;
@@ -180,12 +192,16 @@ body{
 
     transition: all 0.5s ease;
 }
+
+/* HOVER EN EL BOTÓN */
 .Header-button:hover {
     letter-spacing: .125rem;
     background-color: var(--button-color);
     color: var(--button-color-text);
     box-shadow: var(--button-color) 0rem .4375rem 1.8125rem 0rem;
 }
+
+/* CLICK EN EL BOTÓN */
 .Header-button:active {
     letter-spacing: .125rem;
     background-color: var(--button-color);
@@ -195,6 +211,8 @@ body{
     transition: 100ms;
 }
 
+
+/*RESPONSIVE */
 @media (max-width: 75rem) {
     .Header-form{
         width: 85%;
@@ -203,6 +221,8 @@ body{
 @media (max-width: 62.5rem) {
     .Header-menu{
         display: none;
+
+        pointer-events: none;
     }
     .Header-ham{
         display: block;
@@ -214,5 +234,10 @@ body{
     }
     .bi-search{
         display: none;
+    }
+}
+@media (max-width: 50rem){
+    .Header-search{
+        width: 60%;
     }
 }

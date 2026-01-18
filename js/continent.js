@@ -79,10 +79,6 @@ let contador = 0
 // EL COMENTARIO ANTERIOR ESTA OPTIMIZADO CON CHAT GPT, TAL COMO HABLAMOS EN LA ÚLTIMA SESION DE TUTORÍAS.
 
 
-/* ===============================
-   HASH → ÍNDICE CARRUSEL
-================================ */
-
 const hashIndexMap = {
   // América del Norte
   eeuu: 0,
@@ -250,10 +246,6 @@ acordeonBtn.forEach(( _ , index)=>{
 //     })
 // })
 
-/* ===============================
-   LIGHTBOX TABS (DÍAS)
-   CLICK + FLECHAS TECLADO
-================================ */
 
 // obtiene el lightbox activo
 const getActiveLightbox = () => {
