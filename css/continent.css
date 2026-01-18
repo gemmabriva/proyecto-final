@@ -758,3 +758,8 @@ body{
         height: auto;
     }
 }
+@media (max-width: 51.25rem){
+    .Lightbox-ul{
+        height: 80vh;
+    }
+}
