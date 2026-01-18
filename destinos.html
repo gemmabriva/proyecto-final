@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinos</title>
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- Primary Meta Tags -->
+    <title>MÁS DESTINOS</title>
+    <meta name="title" content="En Ruta | Blog de viajes e itinerarios por el mundo" />
+    <meta name="description" content="Explora itinerarios de viaje, rutas por continentes y aventuras reales. En Ruta es tu guía para descubrir el mundo paso a paso." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gemmabriva.github.io/proyecto-final/" />
+    <meta property="og:title" content="En Ruta | Blog de viajes e itinerarios por el mundo" />
+    <meta property="og:description" content="Explora itinerarios de viaje, rutas por continentes y aventuras reales. En Ruta es tu guía para descubrir el mundo paso a paso." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gemmabriva.github.io/proyecto-final/" />
+    <meta property="twitter:title" content="En Ruta | Blog de viajes e itinerarios por el mundo" />
+    <meta property="twitter:description" content="Explora itinerarios de viaje, rutas por continentes y aventuras reales. En Ruta es tu guía para descubrir el mundo paso a paso." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
     <link rel="stylesheet" href="css/destinos.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -27,14 +45,15 @@
             </div>
 
             <!-- Botón para volver al mapa -->
-            <div class="Header-menu">        
+            <nav class="Header-menu">        
                 <a href="index.html" class="Header-button">Volver al mapa</a>
-            </div>
+            </nav>
 
             <!-- Buscador de destinos -->
             <div class="Header-search">
                 <form class="Header-form">
                     <div class="Header-data">
+                        <label for="search" class="Header-label">Buscar destinos</label>
                         <input class="Header-input" type="text" id="search" name="search" required placeholder="Buscar destino">
                     </div>
 
@@ -45,9 +64,9 @@
                 </form>
             </div>
         </div>
-        <div class="Header-nav">
+        <nav class="Header-nav">
             <a href="index.html" class="Header-button">Volver al mapa</a>
-        </div>
+        </nav>
 </header>
 
 <!--MAIN -->
@@ -63,16 +82,16 @@
         <div class="Main-carrousel">
 
             <!-- DESTINO INDIVIDUAL QUE VA ENLAZADO CON UN <a> QUE AL HACER CLICK TE ENVIA AL VIAJE DENTROD EL CARRUSEL DE SU CONTINENTE-->
-            <a href="america-norte.html#eeuu" class="Main-destino">
+            <a href="america-norte.html#eeuu" class="Main-destino" title="Enlace al Lightbox de cada itinerario">
                 <img class="Main-img" src="./assets/eeuu.webp" alt="eeuu">
                 <h3 class="Main-h3">EEUU</h3>
             </a>
-            <a href="america-norte.html#canada" class="Main-destino">
+            <a href="america-norte.html#canada" class="Main-destino" title="Enlace al Lightbox de cada itinerario">
                 <img class="Main-img" src="./assets/canada1.webp" alt="canada">
                 <h3 class="Main-h3">Canada</h3>
             </a>
             <a href="america-norte.html#nymx" class="Main-destino">
-                <img class="Main-img" src="./assets/ny.webp" alt="Nueva York">
+                <img class="Main-img" src="./assets/ny.webp" alt="Nueva York" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">NYC - MX</h3>
             </a>
         </div>
@@ -82,16 +101,16 @@
     <div class="Main-content">
         <h2 class="Main-h2">América del sur</h2>
         <div class="Main-carrousel">
-            <a href="america-sur.html#peru" class="Main-destino">
+            <a href="america-sur.html#peru" class="Main-destino" title="Enlace al Lightbox de cada itinerario">
                 <img class="Main-img" src="./assets/peru.webp" alt="perú">
                 <h3 class="Main-h3">Perú</h3>
             </a>
             <a href="america-sur.html#patagonia" class="Main-destino">
-                <img class="Main-img" src="./assets/patagonia.webp" alt="patagonia">
+                <img class="Main-img" src="./assets/patagonia.webp" alt="patagonia" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Patagonia</h3>
             </a>
             <a href="america-sur.html#brasil" class="Main-destino">
-                <img class="Main-img" src="./assets/brasil.webp" alt="brasil">
+                <img class="Main-img" src="./assets/brasil.webp" alt="brasil" title="Enlace al Lightbox de cada itinerario"> 
                 <h3 class="Main-h3">Barsil</h3>
             </a>
         </div>
@@ -100,15 +119,15 @@
         <h2 class="Main-h2">Europa</h2>
         <div class="Main-carrousel">
             <a href="europa.html#austria" class="Main-destino">
-                <img class="Main-img" src="./assets/austria.webp" alt="austria">
+                <img class="Main-img" src="./assets/austria.webp" alt="austria" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Austria</h3>
             </a>
             <a href="europa.html#grecia" class="Main-destino">
-                <img class="Main-img" src="./assets/grecia.webp" alt="grecia">
+                <img class="Main-img" src="./assets/grecia.webp" alt="grecia" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Grecia</h3>
             </a>
             <a href="europa.html#noruega" class="Main-destino">
-                <img class="Main-img" src="./assets/noruega.webp" alt="noruega">
+                <img class="Main-img" src="./assets/noruega.webp" alt="noruega" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Noruega</h3>
             </a>
         </div>
@@ -117,15 +136,15 @@
         <h2 class="Main-h2">África</h2>
         <div class="Main-carrousel">
             <a href="africa.html#kenia" class="Main-destino">
-                <img class="Main-img" src="./assets/kenia.webp" alt="kenia">
+                <img class="Main-img" src="./assets/kenia.webp" alt="kenia" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Kenia</h3>
             </a>
             <a href="africa.html#marruecos" class="Main-destino">
-                <img class="Main-img" src="./assets/marruecpos.webp" alt="marruecos">
+                <img class="Main-img" src="./assets/marruecpos.webp" alt="marruecos" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Marruecos</h3>
             </a>
             <a href="africa.html#zanzibar" class="Main-destino">
-                <img class="Main-img" src="./assets/zanzibar.webp" alt="zanzibar">
+                <img class="Main-img" src="./assets/zanzibar.webp" alt="zanzibar" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Zanzíbar</h3>
             </a>
         </div>
@@ -134,15 +153,15 @@
         <h2 class="Main-h2">Asia</h2>
         <div class="Main-carrousel">
             <a href="asia.html#japon" class="Main-destino">
-                <img class="Main-img" src="./assets/japon.webp" alt="japon">
+                <img class="Main-img" src="./assets/japon.webp" alt="japon" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">japón</h3>
             </a>
             <a href="asia.html#tailandia" class="Main-destino">
-                <img class="Main-img" src="./assets/tailandia.webp" alt="tailandia">
+                <img class="Main-img" src="./assets/tailandia.webp" alt="tailandia" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Tailandia</h3>
             </a>
             <a href="asia.html#bali" class="Main-destino">
-                <img class="Main-img" src="./assets/indonesia.webp" alt="bali">
+                <img class="Main-img" src="./assets/indonesia.webp" alt="bali" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Bali</h3>
             </a>
         </div>
@@ -151,11 +170,11 @@
         <h2 class="Main-h2">Oceanía</h2>
         <div class="Main-carrousel">
             <a href="oceania.html#australia" class="Main-destino">
-                <img class="Main-img" src="./assets/australia.webp" alt="australia">
+                <img class="Main-img" src="./assets/australia.webp" alt="australia" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Australia</h3>
             </a>
             <a href="oceania.html#nuevazelanda" class="Main-destino">
-                <img class="Main-img" src="./assets/nueva-zelanda.webp" alt="nuevazelanda">
+                <img class="Main-img" src="./assets/nueva-zelanda.webp" alt="nuevazelanda" title="Enlace al Lightbox de cada itinerario">
                 <h3 class="Main-h3">Nueva Zelanda</h3>
             </a>
         </div>
@@ -165,7 +184,7 @@
 <!--FOOTER -->
 <footer class="Footer">
         <div class="Footer-column">
-            <h1 class="Footer-h1">en ruta</h1>
+            <h1 class="Footer-logo">en ruta</h1>
             <ul class="Footer-ul">
                 <li class="Footer-li">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

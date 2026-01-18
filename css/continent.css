@@ -468,7 +468,7 @@ body{
 }
 
 /* BOTON PARA CERRAR EL LIGHTBOX */
-.bi-x-square{
+.Lightbox-button{
     position: fixed;
     top: 0;
     left: 0;
@@ -654,7 +654,6 @@ body{
     align-items: start;
     gap: 1rem;
 }
-
 .Column-li{
 
     padding: 0 2rem;
@@ -662,7 +661,6 @@ body{
     font: var(--p-secundary-font);
     color: var(--body-color);
 }
-
 .Column-strong{
     /* width: 50%;
     min-height: 30vh; */
@@ -701,6 +699,12 @@ body{
 
         text-align: center;
     }
+    .Lightbox-h2{
+        font-size: 3.5rem;
+    }
+    .Lightbox-h3{
+        font-size: 2rem;
+    }
     .Lightbox-img{
         width: 95%;
     }
@@ -716,21 +720,29 @@ body{
         grid-template-columns: 20% 80%;
     }
     .Lightbox-ul{
+        height: 70vh;
+
+        padding: 3rem 0;
+        
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: stretch;
+
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     .Lightbox-li{
         width: 100%;
     }
     .Lightbox-content{
-        min-height: 90vh;
+        width: 100%;
     }
     .Lightbox-text{
-        min-height: 75vh;
+        width: 100%;
+        min-height: 70vh;
 
-        padding: 1rem 0;
+        padding: 1rem;
         
         display: flex;
         flex-flow: column nowrap;

@@ -4,7 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EUROPA</title>
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- Primary Meta Tags -->
+    <title>EUROPA/title>
+    <meta name="title" content="En Ruta | Blog de viajes e itinerarios por el mundo" />
+    <meta name="description" content="Explora itinerarios de viaje, rutas por continentes y aventuras reales. En Ruta es tu guía para descubrir el mundo paso a paso." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gemmabriva.github.io/proyecto-final/" />
+    <meta property="og:title" content="En Ruta | Blog de viajes e itinerarios por el mundo" />
+    <meta property="og:description" content="Explora itinerarios de viaje, rutas por continentes y aventuras reales. En Ruta es tu guía para descubrir el mundo paso a paso." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gemmabriva.github.io/proyecto-final/" />
+    <meta property="twitter:title" content="En Ruta | Blog de viajes e itinerarios por el mundo" />
+    <meta property="twitter:description" content="Explora itinerarios de viaje, rutas por continentes y aventuras reales. En Ruta es tu guía para descubrir el mundo paso a paso." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
     <link rel="stylesheet" href="css/continent.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -27,12 +45,13 @@
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                 </svg>
             </div>
-            <div class="Header-menu">
+            <nav class="Header-menu">
                 <a href="index.html" class="Header-button">Volver al mapa</a>
-            </div>
+            </nav>
             <div class="Header-search">
                 <form class="Header-form">
                     <div class="Header-data">
+                        <label for="search" class="Header-label">Buscar destinos</label>
                         <input class="Header-input" type="text" id="search" name="search" required
                             placeholder="Buscar destino">
                     </div>
@@ -44,9 +63,9 @@
                 </form>
             </div>
         </div>
-        <div class="Header-nav">
+        <nav class="Header-nav">
             <a href="index.html" class="Header-button">Volver al mapa</a>
-        </div>
+        </nav>
     </header>
 
     <!-- SECTION DE EUROPA -->
@@ -109,7 +128,7 @@
                                     Roadtrip &nbsp; | &nbsp; Destinos: &nbsp; Noruega &nbsp; - &nbsp; Islandia</span>
                             </div>
                             <div class="Main-info">
-                                <button class="Main-bttn Main-bttn--eeuu">Explorar más</button>
+                                <button class="Main-bttn" title="Enlace al Lightbox de Noruega">Explorar más</button>
                             </div>
                         </div>
                     </div>
@@ -150,7 +169,7 @@
                                     &nbsp; Santorini</span>
                             </div>
                             <div class="Main-info">
-                                <button class="Main-bttn">Explorar más</button>
+                                <button class="Main-bttn" title="Enlace al Lightbox de Grecia">Explorar más</button>
                             </div>
                         </div>
                     </div>
@@ -192,13 +211,13 @@
                                     / Tren &nbsp; | &nbsp; Destinos: &nbsp; Austria &nbsp; - &nbsp; Alemania</span>
                             </div>
                             <div class="Main-info">
-                                <button class="Main-bttn">Explorar más</button>
+                                <button class="Main-bttn" title="Enlace al Lightbox de Austria">Explorar más</button>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="Main-li Main-li--destinos">
-                    <a href="destinos.html" class="Header-button">Descubre más destinos &nbsp; ➜ </a>
+                    <a href="destinos.html" class="Header-button" title="Enlace a la página de destinos">Descubre más destinos &nbsp; ➜ </a>
                 </li>
             </ul>
             <div class="Main-arrow Main-arrow--next">
@@ -1014,7 +1033,7 @@
     <!-- FOOTER -->
     <footer class="Footer">
         <div class="Footer-column">
-            <a href="index.html" class="Footer-h1">en ruta</a>
+            <a href="index.html" class="Footer-logo">en ruta</a>
             <ul class="Footer-ul">
                 <li class="Footer-li">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"

@@ -268,6 +268,16 @@ const activarDia = (lightbox, index) => {
   tabsText[index].classList.add('isVisible')
 
   lightbox.dataset.dayIndex = index
+
+    // Mover el menú para que el día activo se vea
+  const activeBtn = lightbox.querySelector('.Lightbox-li.isActive')
+  if (activeBtn) {
+    activeBtn.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth'
+    })
+  }
+
 }
 
 /* ===== CLICK EN LOS DÍAS ===== */

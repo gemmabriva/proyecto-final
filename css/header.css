@@ -125,7 +125,7 @@ body{
     min-height: 5vh;
     /* background-color: lightgoldenrodyellow; */
 
-    padding: 1rem;
+    padding: 0 1rem;
 
     justify-items: start;
 }
@@ -158,6 +158,9 @@ body{
 
     border-radius: 1.25rem;
 }
+.Header-label{
+    display: none;
+}
 .Header-input{
     width: 12rem;
     /* background-color: red; */
@@ -189,8 +192,7 @@ body{
     letter-spacing: .0938rem;
     text-transform: uppercase;
     font-size: .9rem;
-
-    transition: all 0.5s ease;
+    
 }
 
 /* HOVER EN EL BOTÓN */

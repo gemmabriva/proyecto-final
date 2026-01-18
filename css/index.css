@@ -125,7 +125,7 @@ a svg path {
 }
 .Main-continent:hover path{
     fill: #c8ffb8;
-    transition: all 0.3s ease-in-out;
+    transition: fill 0.3s ease-in-out;
 }
 .Main-continent--america-norte{
     width: 31.25rem;
