@@ -72,6 +72,15 @@ body{
     margin: auto;
 
     border-radius: 4rem;
+
+    position: relative;
+
+    overflow: hidden;
+}
+.Section-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
 }
 .Section-america-norte{
     background: url(../assets/rascacielos-nueva-york.webp) no-repeat center / cover;
@@ -97,6 +106,8 @@ body{
     /* background-color: dodgerblue; */
 
     padding: 5rem;
+
+    position: relative;
 }
 .Section-h1{
 
@@ -106,8 +117,14 @@ body{
     font-weight: 700;
     font: normal 700 clamp(4.5rem, 3vw, 5.75rem) "Montserrat";
     text-transform: uppercase;
-    text-shadow: 10px 0px 0px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 10px 0px 0px rgba(0, 0, 0, 0.5); */
 
+    color: var(--body-color);
+}
+.Section-p{
+    width: 100%;
+
+    font: var(--p-font);
     color: var(--body-color);
 }
 @media ( max-width: 820px ){
@@ -122,12 +139,6 @@ body{
     .Section{
         align-content: center;
     }
-}
-.Section-p{
-    width: 100%;
-
-    font: var(--p-font);
-    color: var(--body-color);
 }
 .Main{
     width: 100%;
